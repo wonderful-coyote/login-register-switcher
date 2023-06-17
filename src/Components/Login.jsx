@@ -14,9 +14,11 @@ export const SignIn = (props) => {
             <div className="auth-form-container">
                 <h2>Sign In</h2>
                 <form className="login-form" onSubmit={handleSubmit}>
+                    <label htmlFor="username">username</label>
+                    <input type="text" placeholder="username" id="username" name="username" required />
                     <label htmlFor="email">email</label>
                     <input type="email" placeholder="youremail@email.com" id="email" name="email" required />
-                    <label  htmlFor="password">password</label>
+                    <label htmlFor="password">password</label>
                     <input type="password" placeholder="********" id="password" name="password" required />
                     <button className="signup-btn" type="submit">Sign In</button>
                 </form>
