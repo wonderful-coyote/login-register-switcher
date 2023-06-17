@@ -15,9 +15,9 @@ export const SignIn = (props) => {
                 <h2>Sign In</h2>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <label htmlFor="email">email</label>
-                    <input value={email} type="email" placeholder="youremail@email.com" id="email" name="email" />
-                    <label value={pass} htmlFor="password">password</label>
-                    <input type="password" placeholder="********" id="password" name="password" />
+                    <input type="email" placeholder="youremail@email.com" id="email" name="email" required />
+                    <label  htmlFor="password">password</label>
+                    <input type="password" placeholder="********" id="password" name="password" required />
                     <button className="signup-btn" type="submit">Sign In</button>
                 </form>
                 <a className="link-btn" onClick={() => props.onFormSwitch("register")}>Don't have an account? Register here.</a>
