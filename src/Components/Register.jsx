@@ -15,8 +15,10 @@ export const Register = (props) => {
             <div className="auth-form-container">
                 <h2>Register</h2>
                 <form className="register-form" onSubmit={handleSubmit}>
-                    <label htmlFor="nmae">full name</label>
+                    <label htmlFor="name">full name</label>
                     <input type="text" placeholder="your full name" id="name" name="name" required />
+                    <label htmlFor="username">username</label>
+                    <input type="text" placeholder="username" id="username" name="username" required />
                     <label htmlFor="email">email</label>
                     <input type="email" placeholder="youremail@email.com" id="email" name="email" required />
                     <label htmlFor="password">password</label>
